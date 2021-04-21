@@ -7,9 +7,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 10px;
+  padding: 100px 20px calc((100% - 1200px) / 2);
+  margin-left: 10px;
 }
 
 .about__image img {

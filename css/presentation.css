@@ -1,20 +1,18 @@
-
 #presentation {
   background: var(--grey-bg);
 }
 
 .presentation__container {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 140px 20px calc((100% - 1200px) / 2);
+  margin-left: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 10px;
 }
 
 .presentation__image img {
-  width: 600px;
+  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -75,7 +73,7 @@
 }
 
 .presentation__button i {
-margin-right: 10px;
+  margin-right: 10px;
 }
 
 .presentation__button:hover {

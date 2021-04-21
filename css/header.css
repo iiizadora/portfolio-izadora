@@ -1,15 +1,13 @@
-
 .menu {
   background: var(--dark-grey);
 }
 
 .menu__container {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 20px calc((100% - 1200px) / 2);
+  margin-left: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px 10px 20px 10px;
   align-items: center;
 }
 
