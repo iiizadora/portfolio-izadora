@@ -1,0 +1,25 @@
+@media (max-width: 720px) {
+  .menu__container-nav li {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: var(--purple);
+  }
+  .menu__container-bars p {
+    font-size: 2rem;
+    margin: 0 30px;
+  }
+
+  .presentation__image img {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__image img {
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+  .about__information p:nth-child(3) {
+    margin-bottom: 50px;
+  }
+}
