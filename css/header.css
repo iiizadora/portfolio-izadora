@@ -14,26 +14,23 @@
 .menu__container-nav ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 10px;
-}
+  }
 
-.menu__container-nav li {
+.menu__container-nav  a {
+  
   margin: 0 10px;
   padding: 0 10px;
   font-size: 1.2rem;
   color: var(--purple);
 }
 
-.menu__container-nav a {
-  color: var(--purple);
-}
 
 .menu__container-nav a:hover {
   letter-spacing: 0.3px;
   color: var(--white);
 }
 
-.menu__container-bars a {
+.menu__container-bars p {
   color: var(--purple);
   font-size: 2rem;
   font-weight: bold;
