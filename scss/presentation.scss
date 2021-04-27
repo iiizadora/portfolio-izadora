@@ -1,0 +1,78 @@
+@import "./style.scss";
+
+#presentation {
+  background: $grey-bg-color;
+
+  .presentation__container {
+    @include flexbox();
+    padding: 140px 20px $padding;
+    margin-left: 10px;
+    .presentation__text {
+      .hello {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: $purple_color;
+      }
+      .name {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $white_color;
+      }
+
+      .career {
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: $purple_color;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          border-left: 2px solid $purple_color;
+          background: $grey-bg-color;
+          animation: typing 2s steps(14) infinite;
+        }
+
+        @keyframes typing {
+          100% {
+            left: 100%;
+            margin: 0 -25px 0 25px;
+          }
+        }
+      }
+    }
+    .presentation__button {
+      @include flexbox(row, "", center, "");
+
+      margin: 30px 0;
+      padding: 20px ;
+      max-width: 190px;
+      border: none;
+      border-radius: 5px;
+      background: $purple_color;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      
+      a {
+        color: $dark-purple_color;
+      }
+      i {
+        margin-left: 15px;
+      }
+
+      &:hover {
+        background: $white_color;
+      }
+    }
+    .presentation__image {
+      img {
+        max-width: 600px;
+        @extend %flexbox-basic;
+      }
+    }
+  }
+}

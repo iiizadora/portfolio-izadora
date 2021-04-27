@@ -1,0 +1,41 @@
+@import "./style.scss";
+
+#about {
+  background: $dark-grey_color;
+
+  .about__container {
+    @include flexbox('','',space-around,'');
+    
+    padding: 100px 20px $padding;
+    
+
+    .about__image {
+      img {
+        width: 20rem;
+        border-radius: 50%;
+      }
+    }
+
+    .about__information {
+      @include flexbox(column);
+      
+      width: 500px;
+      margin-right: 50px;
+
+      h2 {
+        @extend %h2-text;
+        width: 220px;
+      }
+      
+      p {
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: $white_color;
+        line-height: 1.4;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+

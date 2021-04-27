@@ -1,0 +1,30 @@
+@import "./style.scss";
+.footer {
+  background: $purple_color;
+  padding: 20px 50px $padding;
+  
+  .footer__container {
+    @include flexbox("", "", center, "");
+    
+    p {
+      @extend %flexbox-basic;
+      
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: $grey-bg-color;
+    }
+    .social-midia {
+      ul {
+        @extend %flexbox-basic;
+        
+        li {
+          margin: 0 20px;
+          font-size: 1.5rem;
+        }
+        i {
+          color: $grey-bg-color;
+        }
+      }
+    }
+  }
+}

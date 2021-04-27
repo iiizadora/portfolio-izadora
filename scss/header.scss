@@ -1,0 +1,43 @@
+@import "./style.scss";
+
+.menu {
+  background: $dark-grey_color;
+
+  .menu__container {
+    padding: 20px $padding;
+    margin-left: 10px;
+
+    @include flexbox();
+
+    .menu__container-bars {
+      p {
+        color: $purple_color;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+
+      a:hover {
+        color: $white_color;
+      }
+    }
+
+    .menu__container-nav {
+      ul {
+        @extend %flexbox-basic;
+      }
+
+      a {
+        margin: 0 10px;
+        padding: 0 10px;
+        font-size: 1.2rem;
+        color: $purple_color;
+      }
+
+      a:hover {
+        letter-spacing: 0.3px;
+        color: $white_color;
+      }
+    }
+  }
+}

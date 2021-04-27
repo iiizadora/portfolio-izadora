@@ -1,81 +1,96 @@
-#presentation {
-  background: var(--grey-bg);
+#presentation .presentation__container .presentation__image img {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.presentation__container {
-  padding: 140px 20px calc((100% - 1200px) / 2);
-  margin-left: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+}
+
+#presentation {
+  background: #44475a;
+}
+#presentation .presentation__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 140px 20px calc((100% - 1200px) / 2);
+  margin-left: 10px;
 }
-
-.presentation__image img {
-  max-width: 600px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.presentation__text .hello {
+#presentation .presentation__container .presentation__text .hello {
   font-size: 1.8rem;
   font-weight: 300;
-  color: var(--purple);
+  color: #bd93f9;
 }
-
-.presentation__text .name {
+#presentation .presentation__container .presentation__text .name {
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: #ffffff;
 }
-
-.presentation__text .career {
+#presentation .presentation__container .presentation__text .career {
   position: relative;
   font-size: 1.8rem;
   font-weight: 300;
-  color: var(--purple);
+  color: #bd93f9;
 }
-
-.presentation__text .career::after {
+#presentation .presentation__container .presentation__text .career::after {
   content: "";
   position: absolute;
   left: 0;
   height: 100%;
   width: 100%;
-  border-left: 2px solid var(--purple);
-  background: var(--grey-bg);
+  border-left: 2px solid #bd93f9;
+  background: #44475a;
   animation: typing 2s steps(14) infinite;
 }
-
 @keyframes typing {
   100% {
     left: 100%;
     margin: 0 -25px 0 25px;
   }
 }
-
-.presentation__button {
+#presentation .presentation__container .presentation__button {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 30px 0;
-  padding: 20px 5px;
+  padding: 20px;
   max-width: 190px;
   border: none;
   border-radius: 5px;
-  background: var(--purple);
+  background: #bd93f9;
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 1.2px;
 }
-
-.presentation__button a {
-  color: var(--dark-purple);
+#presentation .presentation__container .presentation__button a {
+  color: #391c77;
+}
+#presentation .presentation__container .presentation__button i {
+  margin-left: 15px;
+}
+#presentation .presentation__container .presentation__button:hover {
+  background: #ffffff;
+}
+#presentation .presentation__container .presentation__image img {
+  max-width: 600px;
 }
 
-.presentation__button i {
-  margin-right: 10px;
-}
-
-.presentation__button:hover {
-  background: var(--white);
-}
+/*# sourceMappingURL=presentation.css.map */

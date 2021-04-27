@@ -1,0 +1,52 @@
+$white_color: #ffffff;
+$purple_color: #bd93f9;
+$dark-grey_color: #282a36;
+$grey-bg-color: #44475a;
+$dark-purple_color: #391c77;
+
+@mixin flexbox(
+  $direction: row,
+  $flex: wrap,
+  $justify: space-between,
+  $align: center
+) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flexbox-basic {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%h2-text {
+  font-size: 2.5rem;
+        font-weight: bold;
+        color: $purple_color;
+        margin-bottom: 25px;
+        border-bottom: solid 3px $white_color;
+        
+}
+
+$padding:calc((100% - 1200px) / 2);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+}
